@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <script>
+         //read operator
+        const operator = prompt('Enter operator \n+\n-\n/\n*')
+        
+        
+        //read numbers in the program
+        const num1 = parseFloat( prompt('Enter the first number:'))
+        const num2 = parseFloat( prompt('Enter the second number: '))
+        
+        //var operation = prompt('1. Addition\n2.Subtraction\n3.Multilication\n4.Division')
+        let result = 0;
+        if(isNaN(num1) || isNaN(num2)){
+            alert('Wrong input! Refresh the page again and provide a correct data');
+        } else{
+
+            if(operator == '+'){
+                result = num1 + num2
+            }
+            
+            else if(operator == '-'){
+                result = num1 - num2
+            }
+
+            else if(operator == '*'){
+                result = num1 * num2
+            }
+
+            else if(operator == '/'){
+                result = num1 / num2
+            }
+
+            //document.write(num1 + operator + num2 + ' = ' + result)
+            prompt('Answer' , result)
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // //read operator
+            // const operator = parseFloat( prompt('Enter the number of operation you want to perform \n1. Addition\n2. Subtration\n3. Division\n4. Multiplication'))
+            
+            // //read numbers in the program
+            // const num1 = parseFloat( prompt('Enter the first number:'))
+            // const num2 = parseFloat( prompt('Enter the second number: '))
+            
+            // //var operation = prompt('1. Addition\n2.Subtraction\n3.Multilication\n4.Division')
+            // let result = 0;
+            // if((num1) || isNaN(num2)){
+            //     alert('Wrong input! Refresh the page again and provide a correct data');
+            // } else{
+
+            //     if(operator == '1'){
+            //         result = num1 + num2
+            //     }
+                
+            //     else if(operator == '2'){
+            //         result = num1 - num2
+            //     }
+
+            //     else if(operator == '3'){
+            //         result = num1 * num2
+            //     }
+
+            //     else if(operator == '4'){
+            //         result = num1 / num2
+            //     }
+
+            //     //document.write(num1 + operator + num2 + ' = ' + result)
+            //     prompt('Answer' , result)
+
+            // }
+
+        
+
+    </script>
+</body>
+</html>
